@@ -15,7 +15,7 @@ if (!username) {
     window.location.replace("/signin");
 }
 
-const socket = io("", {
+const socket = io("https://ws-hw-production.up.railway.app", {
     query: { username },
     reconnectionAttempts: 3,
     reconnectionDelay: 1000
