@@ -25,4 +25,8 @@ httpServer.listen(PORT, () => {
     console.log(`- App running on http://localhost:${PORT.toString()}`);
 });
 
+app.get("/", (_req, res) => {
+  res.send("Server is running!");
+});
+
 export default { app, httpServer };
