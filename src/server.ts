@@ -26,7 +26,7 @@ httpServer.listen(PORT, () => {
 });
 
 app.get("/", (_req, res) => {
-  res.send("Server is running!");
+  res.send("Server is alive!");
 });
 
 export default { app, httpServer };
