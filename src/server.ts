@@ -34,6 +34,6 @@ app.get("*any", (_request, response) => {
 socketHandler(socketIo);
 
 httpServer.listen(PORT, () => {
-  console.log(`- Listen server on port ${PORT.toString()}`);
+  console.log(`- L-O-L Listen server on port ${PORT.toString()}`);
   console.log(`- App running on http://localhost:${PORT.toString()}`);
 });
