@@ -12,14 +12,14 @@ const httpServer = new http.Server(app);
 
 const socketIo = new Server(httpServer, {
   cors: {
-    origin: "https://subtle-cascaron-c2f481.netlify.app/",
+    origin: "https://subtle-cascaron-c2f481.netlify.app",
     methods: ["GET", "POST"],
     credentials: true
   }
 });
 
 app.use(cors({
-  origin: "https://subtle-cascaron-c2f481.netlify.app/",
+  origin: "https://subtle-cascaron-c2f481.netlify.app",
   methods: ["GET", "POST"],
   credentials: true
 }));
