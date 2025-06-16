@@ -1,0 +1,18 @@
+{
+    "files": ["packages.d.ts"],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "rootDir": "./src",
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "outDir": "./build",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true
+    },
+    "include": ["./src/**/*"]
+}
