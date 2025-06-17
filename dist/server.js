@@ -9,13 +9,13 @@ const app = express();
 const httpServer = new http.Server(app);
 const socketIo = new Server(httpServer, {
     cors: {
-        origin: "https://vermillion-dango-d62953.netlify.app",
+        origin: "https://subtle-cascaron-c2f481.netlify.app",
         methods: ["GET", "POST"],
         credentials: true
     }
 });
 app.use(cors({
-    origin: "https://vermillion-dango-d62953.netlify.app",
+    origin: "https://subtle-cascaron-c2f481.netlify.app",
     methods: ["GET", "POST"],
     credentials: true
 }));
@@ -26,6 +26,6 @@ app.get("*any", (_request, response) => {
 });
 socketHandler(socketIo);
 httpServer.listen(PORT, () => {
-    console.log(`- Listen server on port ${PORT.toString()}`);
+    console.log(`- L-O-L Listen server on port ${PORT.toString()}`);
     console.log(`- App running on http://localhost:${PORT.toString()}`);
 });
